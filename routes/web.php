@@ -1,6 +1,6 @@
 <?php
 
-use App\Book;
+use App\Models\Book;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
@@ -16,5 +16,6 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/', function () {
-    return view('books');
+    $books = Book::all();
+    return view('books', ['books' => $books]);
 });
