@@ -10,7 +10,7 @@
 
 				<div class="panel-body">
 					<!-- Display Validation Errors -->
-					@include('common.errors')
+					@include('commons.errors')
 
 					<!-- New Book Form -->
 					<form action="/book" method="POST" class="form-horizontal">
